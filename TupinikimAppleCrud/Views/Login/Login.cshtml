@@ -5,7 +5,7 @@
     Layout = null;
 }
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -14,11 +14,12 @@
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/TupinikimAppleCrud.styles.css" asp-append-version="true" />
 </head>
-<body>
-    <h1>Registration</h1>
+<body class="container mt-5">
+    <h1>Login</h1>
 
-    <h4>LoginModel</h4>
+    <h4>Entre com seu email e senha</h4>
     <hr />
+
     <div class="row">
         <div class="col-md-4">
             <form asp-action="Registration">
@@ -29,47 +30,19 @@
                     <span asp-validation-for="Email" class="text-danger"></span>
                 </div>
                 <div class="form-group">
-                    <label asp-for="Password" class="control-label"></label>
+                    <label asp-for="Password" class="control-label">Senha</label>
                     <input asp-for="Password" class="form-control" type="password" />
                     <span asp-validation-for="Password" class="text-danger"></span>
                 </div>
                 <div class="form-group">
-                    <input type="submit" value="Create" class="btn btn-primary" asp-controller="Home" asp-action="Index" />
+                    <input type="submit" value="Entrar" class="btn mt-5 btn-primary" asp-controller="Home" asp-action="Index" />
                 </div>
             </form>
         </div>
     </div>
 
-    <div>
-        <a asp-action="SignIn">Already have an account?Sign In</a>
-    </div>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
